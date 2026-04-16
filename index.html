@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Md Sifat Mia</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fa-brands fa-android"></i>
+                <span>Sifat</span>
+            </div>
+            
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            
+            <div class="social-icons">
+                <a href="https://github.com/" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            
+            <button class="mobile-menu-btn" onclick="toggleMenu()">
+                <i class="fa-solid fa-bars" id="menu-icon"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobile-menu">
+        <a href="#home" onclick="toggleMenu()">Home</a>
+        <a href="#about" onclick="toggleMenu()">About</a>
+        <a href="#education" onclick="toggleMenu()">Education</a>
+        <a href="#skills" onclick="toggleMenu()">Skills</a>
+        <a href="#projects" onclick="toggleMenu()">Projects</a>
+        <a href="#contact" onclick="toggleMenu()">Contact</a>
+    </div>
+
+    <!-- Hero -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text" data-aos="fade-right">
+                <h1>Hi, I'm <span>Ikram Hossain Sifat</span></h1>
+                <p class="subtitle">Android Developer | 2+ Years Experience</p>
+                <p class="description">
+                    Passionate about building beautiful and functional Android apps. 
+                    Currently pursuing BSc in Computer Science and Engineering at Bangladesh University.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn primary">View Projects</a>
+                    <a href="#contact" class="btn secondary">Get In Touch</a>
+                </div>
+            </div>
+            
+            <div class="hero-image" data-aos="fade-left">
+                <img src="sifat_mia.png" alt="Ikram Hossain Sifat">
+                <div class="badge experience">2+ Years</div>
+                <div class="badge projects">10+ Projects</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 data-aos="fade-up">About Me</h2>
+            <p class="about-text" data-aos="fade-up" data-aos-delay="100">
+                I am an Android Developer with over 2 years of experience and have completed 10+ projects. 
+                I am currently studying Computer Science and Engineering (CSE) at Bangladesh University. 
+                I am passionate about learning new technologies and continuously improving my skills. 
+                I also have a business mindset and practical business experience.
+            </p>
+        </div>
+    </section>
+
+    <!-- Education -->
+    <section id="education" class="section bg-light">
+        <div class="container">
+            <h2 data-aos="fade-up">Education</h2>
+            <div class="education-grid">
+                <div class="edu-card highlight-card" data-aos="fade-up">
+                    <h3>BSc in CSE (Running)</h3>
+                    <p>Bangladesh University</p>
+                    <span class="status running">In Progress</span>
+                </div>
+                <div class="edu-card highlight-card" data-aos="fade-up" data-aos-delay="100">
+                    <h3>HSC - Science(2023)</h3>
+                    <p>Kazi Noman Ahmed Degree College</p>
+                    <p>Muradnager, Cumilla</p>
+                </div>
+                <div class="edu-card highlight-card" data-aos="fade-up" data-aos-delay="200">
+                    <h3>SSC - Science(2021)</h3>
+                    <p>D.R. Govt High School</p>
+                    <p>Muradnager, Cumilla</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section">
+        <div class="container">
+            <h2 data-aos="fade-up">Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card highlight-card" data-aos="zoom-in"><i class="fa-brands fa-java"></i><span>Java</span></div>
+                <div class="skill-card highlight-card" data-aos="zoom-in" data-aos-delay="50"><i class="fa-solid fa-fire"></i><span>Firebase</span></div>
+                <div class="skill-card highlight-card" data-aos="zoom-in" data-aos-delay="100"><i class="fa-solid fa-database"></i><span>MySQL & SQL</span></div>
+                <div class="skill-card highlight-card" data-aos="zoom-in" data-aos-delay="150"><i class="fa-brands fa-php"></i><span>PHP</span></div>
+                <div class="skill-card highlight-card" data-aos="zoom-in" data-aos-delay="200"><i class="fa-brands fa-html5"></i><span>HTML & CSS</span></div>
+                <div class="skill-card highlight-card" data-aos="zoom-in" data-aos-delay="250"><i class="fa-brands fa-git-alt"></i><span>Git & GitHub</span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects - প্রজেক্ট অনুযায়ী ছবি যোগ করা হয়েছে -->
+    <section id="projects" class="section bg-light">
+        <div class="container">
+            <h2 data-aos="fade-up">Featured Projects</h2>
+            <div class="projects-grid">
+                
+                <!-- 1. Mess Management System -->
+                <div class="project-card highlight-card" data-aos="fade-up">
+                    <img src="https://cdn.dribbble.com/userupload/18025375/file/original-d498c7f1268ca5fcb447e2976d77dc86.png?resize=1504x1128&vertical=center" alt="Mess Management System" class="project-img">
+                    <h3>Mess Management System</h3>
+                    <p>Complete mess expense, meal schedule and member payment management Android app.</p>
+                    <button onclick="viewProject(1)" class="explore-btn">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i> Explore Project
+                    </button>
+                </div>
+
+                <!-- 2. Agriculture App -->
+                <div class="project-card highlight-card" data-aos="fade-up" data-aos-delay="100">
+                    <img src="https://cdn.dribbble.com/userupload/45795914/file/474773e3a6ddb97c36054740690daf0c.png?resize=1504x1128&vertical=center" alt="Agriculture App" class="project-img">
+                    <h3>Agriculture App</h3>
+                    <p>Farmer-friendly app with crop tracking, weather and market price information.</p>
+                    <button onclick="viewProject(2)" class="explore-btn">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i> Explore Project
+                    </button>
+                </div>
+
+                <!-- 3. Basic E-commerce App -->
+                <div class="project-card highlight-card" data-aos="fade-up" data-aos-delay="200">
+                    <img src="https://cdn.dribbble.com/userupload/43801792/file/original-1e6a4ebbe75a86295b57c5439ac97ba3.png?resize=1504x1128&vertical=center" alt="E-commerce App" class="project-img">
+                    <h3>Basic E-commerce App</h3>
+                    <p>Full-featured shopping app with product catalog, cart and order tracking.</p>
+                    <button onclick="viewProject(3)" class="explore-btn">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i> Explore Project
+                    </button>
+                </div>
+
+                <!-- 4. BMI Calculator -->
+                <div class="project-card highlight-card" data-aos="fade-up" data-aos-delay="300">
+                    <img src="https://cdn.dribbble.com/userupload/44431449/file/9db18a5a2340b223462fc9899a4069dc.png?resize=1504x1128&vertical=center" alt="BMI Calculator" class="project-img">
+                    <h3>BMI Calculator</h3>
+                    <p>Health & fitness app with BMI, BMR and daily calorie tracker.</p>
+                    <button onclick="viewProject(4)" class="explore-btn">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i> Explore Project
+                    </button>
+                </div>
+
+                <!-- 5. Demo Chatbot -->
+                <div class="project-card highlight-card" data-aos="fade-up" data-aos-delay="400">
+                    <img src="https://cdn.dribbble.com/userupload/46684009/file/0883d22ad549300acb39c970a410cb4a.png?resize=1504x1128&vertical=center" alt="Demo Chatbot" class="project-img">
+                    <h3>Demo Chatbot</h3>
+                    <p>AI-powered chatbot interface built with Java and Firebase.</p>
+                    <button onclick="viewProject(5)" class="explore-btn">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i> Explore Project
+                    </button>
+                </div>
+
+                <!-- 6. Tasbih App -->
+                <div class="project-card highlight-card" data-aos="fade-up" data-aos-delay="500">
+                    <img src="https://cdn.dribbble.com/userupload/47384146/file/356b7cf477288e6cb7fc57e19450854f.png?resize=1504x1128&vertical=center" alt="Tasbih App" class="project-img">
+                    <h3>Tasbih App</h3>
+                    <p>Digital prayer counter with multiple themes and progress tracking.</p>
+                    <button onclick="viewProject(6)" class="explore-btn">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i> Explore Project
+                    </button>
+                </div>
+
+                <!-- 7. Demo Instagram -->
+                <div class="project-card highlight-card" data-aos="fade-up" data-aos-delay="600">
+                    <img src="https://cdn.dribbble.com/userupload/37006033/file/original-5fb32c5af9f16bb8e234d043a74651ff.png?resize=1024x768&vertical=center" alt="Demo Instagram" class="project-img">
+                    <h3>Demo Instagram</h3>
+                    <p>A feature-rich Instagram clone demo built with Android and Firebase, demonstrating social connectivity and seamless media sharing.</p>
+                    <button onclick="viewProject(7)" class="explore-btn">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i> Explore Project
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 data-aos="fade-up">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info" data-aos="fade-right">
+                    <p><i class="fa-solid fa-phone"></i> 01795-586830</p>
+                    <p><i class="fa-solid fa-envelope"></i> devsifat69026@gmail.com</p>
+                    <p><i class="fa-solid fa-location-dot"></i> Mohammadpur, Dhaka, Bangladesh</p>
+                    
+                    <div class="social-icons large">
+                        <a href="https://github.com/" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <form class="contact-form" id="contact-form" onsubmit="handleSubmit(event)" data-aos="fade-left">
+                    <input type="text" id="name" placeholder="Your Name" required>
+                    <input type="email" id="email" placeholder="Your Email" required>
+                    <textarea id="message" placeholder="Your Message / Project Brief" rows="6" required></textarea>
+                    <button type="submit" class="btn primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 Ikram Hossain Sifat • Android Developer</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

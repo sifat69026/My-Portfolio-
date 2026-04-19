@@ -19,8 +19,7 @@ body {
     background: #fff;
 }
 
-/* Navbar, Hero, About, Contact, Footer - আগের মতোই রাখা হয়েছে */
-
+/* Navbar */
 .navbar {
     background: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(12px);
@@ -83,6 +82,7 @@ body {
     color: #334155;
 }
 
+/* Mobile Menu */
 .mobile-menu {
     display: none;
     position: fixed;
@@ -161,11 +161,24 @@ body {
     transition: all 0.3s ease;
 }
 
-.primary { background: var(--primary); color: white; }
-.primary:hover { background: #1e40af; }
+.primary {
+    background: var(--primary);
+    color: white;
+}
 
-.secondary { border: 2px solid var(--primary); color: var(--primary); }
-.secondary:hover { background: var(--primary); color: white; }
+.primary:hover {
+    background: #1e40af;
+}
+
+.secondary {
+    border: 2px solid var(--primary);
+    color: var(--primary);
+}
+
+.secondary:hover {
+    background: var(--primary);
+    color: white;
+}
 
 .hero-image img {
     width: 100%;
@@ -247,7 +260,7 @@ h2 {
     transform: scaleX(1);
 }
 
-/* ==================== EDUCATION & SKILLS - ৩ কলাম ==================== */
+/* ==================== EDUCATION & SKILLS - ৩ কলাম করে ==================== */
 .education-grid,
 .skills-grid {
     display: grid;
@@ -255,9 +268,21 @@ h2 {
     gap: 2rem;
 }
 
-.edu-card { text-align: center; }
-.edu-card h3 { font-size: 1.5rem; margin-bottom: 0.5rem; color: #1e40af; }
-.edu-card p { color: #475569; margin-bottom: 1rem; }
+/* Education Cards */
+.edu-card {
+    text-align: center;
+}
+
+.edu-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #1e40af;
+}
+
+.edu-card p {
+    color: #475569;
+    margin-bottom: 1rem;
+}
 
 .status {
     display: inline-block;
@@ -273,6 +298,7 @@ h2 {
     border: 1px solid #bfdbfe;
 }
 
+/* Skills Cards */
 .skill-card {
     display: flex;
     flex-direction: column;
@@ -283,29 +309,36 @@ h2 {
     padding: 2rem 1rem;
 }
 
-.skill-card i { color: #2563eb; }
-.skill-card span { font-size: 1.1rem; font-weight: 500; margin-top: 8px; }
+.skill-card i {
+    color: #2563eb;
+}
 
-/* ==================== PROJECTS - Image Size বড় করা হয়েছে ==================== */
+.skill-card span {
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-top: 8px;
+}
+
+/* Projects Grid - আগের মতোই রাখা হয়েছে */
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
     gap: 2rem;
 }
 
-/* Project Image - Size বড় করা হয়েছে */
+/* Project Image */
 .project-img {
-    width: 200%;
-    height: 300px;           /* আগের চেয়ে বড় করা হয়েছে */
+    width: 100%;
+    height: 210px;
     object-fit: cover;
-    border-radius: 20px;
+    border-radius: 18px;
     margin-bottom: 1.2rem;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.12);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.1);
     transition: transform 0.4s ease;
 }
 
 .highlight-card:hover .project-img {
-    transform: scale(1.05);
+    transform: scale(1.04);
 }
 
 .project-card h3 {
@@ -349,7 +382,7 @@ h2 {
     transform: translateY(-2px);
 }
 
-/* Contact & Footer */
+/* Contact */
 .contact-content {
     display: grid;
     grid-template-columns: 1fr 1.2fr;
@@ -383,6 +416,7 @@ h2 {
     box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
 }
 
+/* Footer */
 footer {
     background: #0f172a;
     color: white;
@@ -405,7 +439,7 @@ footer {
     .hero-text h1 { font-size: 2.8rem; }
     .contact-content { grid-template-columns: 1fr; }
     .projects-grid { grid-template-columns: 1fr; }
-    .project-img { height: 220px; }   /* মোবাইলে একটু ছোট */
+    .project-img { height: 190px; }
 }
 
 @media (min-width: 1200px) {
@@ -413,8 +447,9 @@ footer {
         grid-template-columns: repeat(3, 1fr);
     }
     
+    /* Education & Skills ৩ কলাম */
     .education-grid,
     .skills-grid {
         grid-template-columns: repeat(3, 1fr);
     }
-}
+} 
